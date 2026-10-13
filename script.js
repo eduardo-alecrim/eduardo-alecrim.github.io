@@ -1,0 +1,201 @@
+// Language toggle, typed tagline, scroll reveals and the active nav link.
+// The English text lives in index.html; this file only carries Portuguese.
+
+const PT = {
+  "nav.skip": "Pular para o conteúdo",
+  "nav.about": "Sobre",
+  "nav.exp": "Experiência",
+  "nav.stack": "Stack",
+  "nav.cases": "Cases",
+  "nav.contact": "Contato",
+
+  "hero.role": "Desenvolvedor backend Java",
+  "hero.where": "Brasília, Brasil",
+  "hero.tagline": "Construo serviços backend e modernizo os sistemas legados por trás deles.",
+  "hero.cta": "Ver os cases",
+  "focus.api": "APIs REST",
+  "focus.events": "Orientado a eventos",
+  "focus.cloud": "Cloud-native",
+  "focus.legacy": "Modernização de legado",
+
+  "about.title": "Sobre",
+  "about.p1": 'Sou desenvolvedor backend Java com mais de 4 anos de experiência construindo e modernizando sistemas corporativos. Hoje atuo na <a href="https://www.cassi.com.br" target="_blank" rel="noopener">CASSI</a>, uma das maiores operadoras de autogestão em saúde do país, desenvolvendo serviços com Spring Boot, Quarkus e Apache Kafka.',
+  "about.p2": "Antes, na CAST group, passei de júnior a sênior em cerca de quinze meses e migrei todos os serviços SOAP da plataforma Oracle SOA para Spring Boot, com deploy no OpenShift.",
+  "about.p3": "Gosto de APIs bem feitas, de sistemas orientados a eventos e de transformar código legado em algo em que dá gosto trabalhar.",
+  "now.title": "Agora",
+  "now.l1": "Trabalhando em",
+  "now.t1": "Serviços backend na CASSI.",
+  "now.l2": "Construindo com",
+  "now.t2": "Spring Boot, Quarkus e Apache Kafka, no OpenShift.",
+  "now.l3": "Estudando",
+  "now.t3": "DDD, Clean Architecture e TDD, na pós-graduação em Engenharia de Software Ágil.",
+  "now.l4": "Moro em",
+  "now.t4": "Brasília, Brasil (UTC−3).",
+
+  "exp.title": "Experiência",
+  "exp.note": "4+ anos",
+  "exp.cassi.date": "out 2024 — atual",
+  "exp.cassi.role": "Desenvolvedor Backend Java",
+  "exp.cassi.sum": "Desenvolvimento e modernização de aplicações corporativas em uma das maiores operadoras de autogestão em saúde do país.",
+  "exp.cassi.b1": "Desenvolvimento de aplicações backend com Java, utilizando Spring Boot e Quarkus.",
+  "exp.cassi.b2": "Desenvolvimento de aplicações orientadas a eventos com mensageria Kafka.",
+  "exp.cassi.b3": "Migração de projetos legados em ASP.NET MVC 4.6 para nova arquitetura, com backend em Java e frontend em React.",
+  "exp.cassi.b4": "Migração de aplicações legadas do OpenShift 3 para o OpenShift 4.",
+  "exp.cassi.b5": "Planejamento e desenvolvimento de novas soluções corporativas.",
+  "exp.cassi.b6": "Modelagem de banco de dados SQL Server das novas aplicações, definindo a estrutura de dados e o relacionamento entre entidades.",
+  "exp.sr.date": "jul 2023 — out 2024",
+  "exp.sr.role": "Desenvolvedor Sênior",
+  "exp.sr.badge": "De júnior a sênior em 15 meses",
+  "exp.sr.sum": "Modernização da arquitetura de integração, migrando serviços legados para Java/Spring Boot e para a nuvem.",
+  "exp.sr.b1": "Migração de todos os serviços SOAP da plataforma Oracle SOA para aplicações Java/Spring Boot.",
+  "exp.sr.b2": "Conversão de serviços SOAP em APIs REST, modernizando as integrações entre sistemas.",
+  "exp.sr.b3": "Implantação e disponibilização dos backends na plataforma OpenShift (containers).",
+  "exp.sr.b4": "Participação nas definições técnicas e de arquitetura das migrações e interlocução com o cliente para alinhamento de soluções técnicas.",
+  "exp.sr.b5": "Desenvolvimento de sistemas com backend em Java/Spring Boot e frontend em ASP.NET MVC.",
+  "exp.mid.date": "out 2022 — jun 2023",
+  "exp.mid.role": "Desenvolvedor Pleno",
+  "exp.mid.b1": "Desenvolvimento de APIs REST com Java e Spring Boot.",
+  "exp.mid.b2": "Migração de projetos legados em Apache Camel para Spring Boot.",
+  "exp.mid.b3": "Desenvolvimento e consumo de serviços SOAP para integração entre sistemas.",
+  "exp.mid.b4": "Desenvolvimento de aplicações web com ASP.NET MVC.",
+  "exp.jr.date": "abr 2022 — set 2022",
+  "exp.jr.role": "Desenvolvedor Júnior",
+  "exp.jr.b1": "Migração de aplicações legadas de ASP.NET Web Forms para ASP.NET MVC.",
+  "exp.jr.b2": "Desenvolvimento de APIs REST para integração entre sistemas e sites.",
+  "exp.jr.b3": "Evolução de backends de integração construídos com Apache Camel.",
+
+  "edu.title": "Formação",
+  "edu.post": "Pós-graduação, Engenharia de Software Ágil: DDD, Clean Architecture e TDD",
+  "edu.bsc.date": "mar 2019 — jul 2021",
+  "edu.bsc": "Bacharelado, Análise e Desenvolvimento de Sistemas",
+  "edu.cert.label": "Certificação",
+  "edu.cert": "Acessibilidade web: crie designs inclusivos",
+
+  "stack.title": "Stack",
+  "stack.g1": "Linguagens e frameworks",
+  "stack.g2": "Mensageria e APIs",
+  "stack.g3": "Plataforma e dados",
+  "stack.g4": "Front-end e .NET",
+
+  "cases.title": "Cases",
+  "cases.note": "Modernização de legado",
+  "cases.intro": "Cinco migrações em que trabalhei, de plataformas legadas para stacks modernas. O código das empresas é privado; aqui está o que mudou e como.",
+  "cases.ctx": "Contexto",
+  "cases.did": "O que fiz",
+  "cases.doing": "O que estou fazendo",
+  "cases.all": "Todos os serviços",
+  "cases.done": "Concluído",
+  "cases.ongoing": "Em andamento",
+  "c1.ctx": "As integrações de um cliente rodavam como serviços SOAP na plataforma Oracle SOA.",
+  "c1.did": "Migrei todos esses serviços para aplicações Java/Spring Boot, converti-os em APIs REST e fiz o deploy dos novos backends no OpenShift, participando das decisões de arquitetura e alinhando as soluções com o cliente.",
+  "c2.ctx": "Aplicações corporativas da CASSI construídas em ASP.NET MVC 4.6.",
+  "c2.did": "Estou migrando essas aplicações para uma nova arquitetura com backend em Java e frontend em React, e modelando os bancos SQL Server das novas aplicações.",
+  "c3.ctx": "Backends de integração construídos com Apache Camel.",
+  "c3.did": "Migrei os projetos legados em Camel para Spring Boot, modernizando a arquitetura de integração, e desenvolvi APIs REST e serviços SOAP no caminho.",
+  "c4.ctx": "Aplicações legadas da CASSI rodando no OpenShift 3.",
+  "c4.did": "Estou migrando essas aplicações para o OpenShift 4.",
+  "c5.ctx": "Aplicações web legadas escritas em ASP.NET Web Forms.",
+  "c5.did": "Migrei essas aplicações para ASP.NET MVC, modernizando a arquitetura e facilitando a manutenção, e desenvolvi APIs REST para integrar sistemas e sites.",
+
+  "contact.eyebrow": "Contato",
+  "contact.title": "Vamos conversar.",
+  "contact.text": "Sempre topo uma conversa sobre backend, sistemas orientados a eventos e modernização de legado.",
+  "contact.btn": "Fale comigo no LinkedIn ↗",
+  "footer.note": "Inspirado no metrô de Brasília, que tem duas linhas: verde e laranja.",
+};
+
+const root = document.documentElement;
+const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const nodes = [...document.querySelectorAll("[data-i18n]")];
+const EN = Object.fromEntries(nodes.map((node) => [node.dataset.i18n, node.innerHTML]));
+const tagline = document.querySelector("[data-typed]");
+const buttons = [...document.querySelectorAll(".lang button")];
+let typing;
+
+function type(text, delay) {
+  clearTimeout(typing);
+  tagline.parentElement.setAttribute("aria-label", text);
+  tagline.setAttribute("aria-hidden", "true");
+  if (reduceMotion) {
+    tagline.textContent = text;
+    return;
+  }
+  let shown = 0;
+  tagline.textContent = "";
+  const step = () => {
+    tagline.textContent = text.slice(0, ++shown);
+    if (shown < text.length) typing = setTimeout(step, 26);
+  };
+  typing = setTimeout(step, delay);
+}
+
+function setLang(lang, firstLoad = false) {
+  const dict = lang === "pt" ? PT : EN;
+  for (const node of nodes) {
+    if (node !== tagline && dict[node.dataset.i18n] !== undefined) node.innerHTML = dict[node.dataset.i18n];
+  }
+  root.lang = lang === "pt" ? "pt-BR" : "en";
+  for (const button of buttons) button.setAttribute("aria-pressed", String(button.dataset.lang === lang));
+  type(dict["hero.tagline"], firstLoad ? 1100 : 150);
+  try {
+    localStorage.setItem("lang", lang);
+  } catch {
+    // Private windows can refuse storage; the choice just won't be remembered.
+  }
+}
+
+for (const button of buttons) button.addEventListener("click", () => setLang(button.dataset.lang));
+
+let saved = null;
+try {
+  saved = localStorage.getItem("lang");
+} catch {
+  saved = null;
+}
+setLang(saved === "pt" ? "pt" : "en", true);
+
+// Reveal blocks as they scroll into view, staggered among their siblings.
+const revealed = [...document.querySelectorAll("[data-reveal]")];
+for (const el of revealed) {
+  const siblings = [...el.parentElement.children].filter((child) => child.hasAttribute("data-reveal"));
+  el.style.setProperty("--i", Math.max(0, siblings.indexOf(el)));
+}
+if ("IntersectionObserver" in window && !reduceMotion) {
+  const io = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in");
+          io.unobserve(entry.target);
+        }
+      }
+    },
+    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" },
+  );
+  revealed.forEach((el) => io.observe(el));
+} else {
+  revealed.forEach((el) => el.classList.add("in"));
+}
+
+// Mark the nav link of the section on screen.
+const links = new Map([...document.querySelectorAll(".nav-links a")].map((a) => [a.hash.slice(1), a]));
+if ("IntersectionObserver" in window) {
+  const spy = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        const link = links.get(entry.target.id);
+        if (link && entry.isIntersecting) {
+          links.forEach((a) => a.removeAttribute("aria-current"));
+          link.setAttribute("aria-current", "true");
+        }
+      }
+    },
+    { rootMargin: "-45% 0px -50% 0px" },
+  );
+  links.forEach((_, id) => {
+    const section = document.getElementById(id);
+    if (section) spy.observe(section);
+  });
+}
+
+document.querySelector("[data-year]").textContent = new Date().getFullYear();
